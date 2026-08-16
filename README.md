@@ -1,2 +1,2 @@
 # Cartography
-A repository showcasing geospatial datascience applications
+A repository showcasing geospatial data science applications
