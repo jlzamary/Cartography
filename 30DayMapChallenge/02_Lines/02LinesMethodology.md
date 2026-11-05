@@ -10,6 +10,11 @@ If you’re a W&M student and still aren’t sure whether you vote in the Matoak
 
 Links to the interactive map and GitHub repo in the pinned comment.
 
+### Map Visual
+
+![Lines Map](02LinesMap.png)
+
+### Sources
 
 | Source | Link |
 | :--- | :---: |

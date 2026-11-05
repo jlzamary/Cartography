@@ -4,6 +4,11 @@ Citizen science can play a huge role in understanding species patterns and colle
 
 Often called “living fossils,” horseshoe crabs have changed little since the Triassic, around 250 million years ago. Despite the name, they’re chelicerates, more closely related to spiders and scorpions than to true crabs. Sightings cluster most densely along the New England coast but stretch all the way to southern Florida. Clusters like these partly reflect where people are looking, not just where the crabs are, which is worth keeping in mind with any citizen science dataset.
 
+### Map Visual
+
+![Clusters Map](Day04MapClusters.png)
+
+### Sources
 
 | Source | Link |
 | :--- | :---: |
