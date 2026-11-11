@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>30 Day Map Challenge 2026</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <!-- Put your banner image at app/header.jpg -->
+  <img class="header-image" src="Assets/USGS_water.jpg" alt="Header" onerror="this.remove()">
+</header>
+<main>
+  <h1>#30DayMapChallenge 2026</h1>
+  <div id="days">Loading…</div>
+</main>
+
+<footer>
+  <strong>Jack Zamary</strong><br>
+  <a href="mailto:you@example.com">jlzamary@wm.edu</a> ·
+  <a href="https://github.com/jlzamary">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/jack-liam-zamary/">LinkedIn</a> ·
+  <a href="https://x.com/jack_zamary">X</a>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+  // Add a new entry here each day: [folder, markdown file]
+  const days = [
+    ["06_Vintage",  "06VintageMethodology.md"],
+    ["05_Sight",    "05SightMethodology.md"],
+    ["04_Clusters", "04ClustersMethodology.md"],
+    ["03_Polygons", "03PolygonsMethodology.md"],
+    ["02_Lines",    "02LinesMethodology.md"],
+  ];
+
+  const root = "../30DayMapChallenge/";
+  const out = document.getElementById("days");
+
+  Promise.all(days.map(async ([dir, file]) => {
+    const md = await (await fetch(`${root}${dir}/${file}`)).text();
+    const base = `${root}${dir}/`;
+    const section = document.createElement("section");
+    section.innerHTML = marked.parse(md);
+    // Point relative image paths at the day's folder
+    section.querySelectorAll("img").forEach(img => {
+      const src = img.getAttribute("src");
+      if (!/^(https?:|\/)/.test(src)) img.src = base + src;
+    });
+    return section.outerHTML;
+  })).then(html => out.innerHTML = html.join(""))
+    .catch(e => out.textContent = "Could not load entries (serve the repo root over HTTP): " + e);
+</script>
+</body>
+</html>

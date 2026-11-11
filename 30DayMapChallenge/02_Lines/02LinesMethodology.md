@@ -18,6 +18,19 @@ Links to the interactive map and GitHub repo in the pinned comment.
 
 | Source | Link |
 | :--- | :---: |
+| James City County Parcels | [Link](https://property.jamescitycountyva.gov/arcgis/rest/services/JCC/GIS_Data/FeatureServer/17) |
+| James City County Polling Places | [Link](https://property.jamescitycountyva.gov/arcgis/rest/services/JCC/GIS_Data/MapServer/25) |
+| James City County Voting Precincts | [Link](https://property.jamescitycountyva.gov/arcgis/rest/services/JCC/GIS_Data/MapServer/26) |
+| Williamsburg Parcels | [Link](https://gis.williamsburgva.gov/server/rest/services/Tax_Parcels/MapServer/0) |
+| Williamsburg Polling Sites | [Link](https://gis.williamsburgva.gov/server/rest/services/Voter_Precinct_Lookup_Map_MIL1/MapServer/0) |
+| Williamsburg Voting Precincts | [Link](https://gis.williamsburgva.gov/server/rest/services/Voter_Precinct_Lookup_Map_MIL1/MapServer/1) |
+| Basemap (CARTO, © OpenStreetMap contributors) | [Link](https://carto.com/basemaps) |
+| MapLibre GL JS | [Link](https://maplibre.org/) |
+
+### View it Online
+
+| Source | Link |
+| :--- | :---: |
 | Interactive Map | https://jlzamary.github.io/ballot-box/ | 
 | GitHub Repo | https://github.com/jlzamary/ballot-box | 
 | LinkedIn Post | https://lnkd.in/p/emYYiEHv |
